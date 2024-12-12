@@ -1,0 +1,150 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary: seagreen;
+  --error: crimson;
+  --secondary: slategrey;
+}
+
+body {
+  background: whitesmoke;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* navbar styling */
+header {
+  background: white;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: seagreen;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* home page styling */
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+/* workout details styling */
+
+.workout-details{
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.workout-details h3, .workout-form h3{
+  margin: 0px 0px 10px 0px;
+  /* text-align: center; */
+  color: var(--primary)
+}
+
+.workout-details p{
+  margin: 0px;
+  /* text-align: center; */
+  color: var(--secondary);
+}
+
+.workout-details strong{
+  margin: 0px;
+  /* text-align: center; */
+  color: black;
+}
+
+/* workout form details */
+
+.workout-form{
+  display: block;
+}
+
+.workout-form input{
+  display: block;
+  padding: 10px;
+  width: 75%;
+  /* border: 1px solid var(--secondary); */
+  color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+}
+
+.workout-form input:focus{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  outline: none;
+}
+
+.workout-form button{
+  background-color: var(--primary);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.workout-form button:hover{
+  transform: scale(1.025);
+}
+
+div.error{
+ padding: 10px;
+ font-size: smaller;
+ background-color: pink;
+ border: 1px solid var(--error);
+ border-radius: 10px;
+ color: var(--error);
+ width: 75%;
+}
+
+input.error{
+ /* background-color: pink; */
+ border: 1px solid var(--error);
+}
+
+.workout-details i{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 10px;
+}
